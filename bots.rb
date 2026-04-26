@@ -5,21 +5,21 @@
 class Bots < Formula
   desc "Bots - Session Persistence & Decision Tracking CLI"
   homepage "https://github.com/AlvaroRausell/bots"
-  version "0.0.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AlvaroRausell/bots/releases/download/v0.0.1/bots_0.0.1_darwin_amd64.tar.gz"
-      sha256 "638f42f08391e74750d19750e8d19d292d8f809d7e1910ec7f7feaf97231afd6"
+      url "https://github.com/AlvaroRausell/bots/releases/download/v0.1.0/bots_0.1.0_darwin_amd64.tar.gz"
+      sha256 "7d7423f6582751a999e6e057d2a24190c96b263764eedb5dfc32409d3dd6a7bc"
 
       define_method(:install) do
         bin.install "bots"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AlvaroRausell/bots/releases/download/v0.0.1/bots_0.0.1_darwin_arm64.tar.gz"
-      sha256 "e0fc370417be79c80421082d374467f8b64cea524202b2b490e594c4b3a306cd"
+      url "https://github.com/AlvaroRausell/bots/releases/download/v0.1.0/bots_0.1.0_darwin_arm64.tar.gz"
+      sha256 "dd40e9dd0d051bb153f6de7195d11631a2bda24af3511fdf6bc6c252fd629271"
 
       define_method(:install) do
         bin.install "bots"
@@ -29,15 +29,15 @@ class Bots < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlvaroRausell/bots/releases/download/v0.0.1/bots_0.0.1_linux_amd64.tar.gz"
-      sha256 "61401e2058103a1d925b8ab7c0d18b31e2342e6d5deccc04830ff5562c6e486d"
+      url "https://github.com/AlvaroRausell/bots/releases/download/v0.1.0/bots_0.1.0_linux_amd64.tar.gz"
+      sha256 "ee44c098aa2ef8604fda96adedc937989ce8cdc46b2958bf7f80895d71e736e0"
       define_method(:install) do
         bin.install "bots"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlvaroRausell/bots/releases/download/v0.0.1/bots_0.0.1_linux_arm64.tar.gz"
-      sha256 "bde7af6c979c34319342e1c339682089ebac253104627c153bb7f00f37090aec"
+      url "https://github.com/AlvaroRausell/bots/releases/download/v0.1.0/bots_0.1.0_linux_arm64.tar.gz"
+      sha256 "6f3f18399965b6aff7d01a2cb7b3fd096d612cb041412af9f8c0f6ef2f3af7ae"
       define_method(:install) do
         bin.install "bots"
       end
